@@ -1,0 +1,17 @@
+# en.yml
+greeting:
+  hello: "Hello"
+  welcome: "Welcome to our app"
+
+user:
+  login: "Login"
+  logout: "Logout"
+  profile: "Profile"
+
+errors:
+  required: "This field is required"
+  invalid_email: "Invalid email address"
+
+buttons:
+  save: "Save"
+  cancel: "Cancel"
