@@ -1,14 +1,14 @@
 # en.yml
 header:
-  welcome: "Welcome to IO Communication"
+  welcome: "Willkommen bei IO Communication"
 body:
-  hello: "Hello"
-  first_text: "We're thrilled to have you join us! Your account has been successfully created."
-  second_text: "Click the button below to log in and get started with IO Platform."
-  third_text: "Login to Your Account"
-  fourth_text: "If you didn’t create this account, please ignore this email or contact support."
-  fifth_text: "Best regards"
-  sixth_text: "IO Platform Team"
+  hello: "Hallo"
+  first_text: "Wir freuen uns, dass Sie sich uns anschließen! Ihr Konto wurde erfolgreich erstellt."
+  second_text: "Klicken Sie auf die Schaltfläche unten, um sich anzumelden und mit der IO-Plattform zu beginnen."
+  third_text: "Melden Sie sich bei Ihrem Konto an"
+  fourth_text: "Wenn Sie dieses Konto nicht erstellt haben, ignorieren Sie diese E-Mail bitte oder wenden Sie sich an den Support."
+  fifth_text: "Beste grüße\n"
+  sixth_text: "IO-Plattform-Team"
 footer:
-  footer_text_one: "2025 IO Platform. All rights reserved."
-  cancefooter_text_two: "This is an automated email — please do not reply."
+  footer_text_one: "2025 IO-Plattform. Alle Rechte vorbehalten."
+  cancefooter_text_two: "Dies ist eine automatisierte E-Mail. Bitte antworten Sie nicht."
