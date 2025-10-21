@@ -1,14 +1,14 @@
 # en.yml
 greeting:
-  hello: "Hello"
-  welcome: "Welcome to our app"
+  hello: "Hallo"
+  welcome: "Willkommen in unserer app"
 user:
   login: "Login"
-  logout: "Logout"
-  profile: "Profile"
+  logout: "Abmelden"
+  profile: "Profil"
 errors:
-  required: "This field is required"
-  invalid_email: "Invalid email address"
+  required: "Dieses Feld ist erforderlich"
+  invalid_email: "Ungültige E-Mail-Adresse"
 buttons:
-  save: "Save"
-  cancel: "Cancel"
+  save: "Speichern"
+  cancel: "Stornieren"
