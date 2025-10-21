@@ -1,14 +1,15 @@
 # en.yml
-header:
-  welcome: "Willkommen bei IO Communication"
-body:
-  hello: "Hallo"
-  first_text: "Wir freuen uns, dass Sie sich uns anschließen! Ihr Konto wurde erfolgreich erstellt."
-  second_text: "Klicken Sie auf die Schaltfläche unten, um sich anzumelden und mit der IO-Plattform zu beginnen."
-  third_text: "Melden Sie sich bei Ihrem Konto an"
-  fourth_text: "Wenn Sie dieses Konto nicht erstellt haben, ignorieren Sie diese E-Mail bitte oder wenden Sie sich an den Support."
-  fifth_text: "Beste grüße\n"
-  sixth_text: "IO-Plattform-Team"
-footer:
-  footer_text_one: "2025 IO-Plattform. Alle Rechte vorbehalten."
-  cancefooter_text_two: "Dies ist eine automatisierte E-Mail. Bitte antworten Sie nicht."
+customer_reg_email_content:
+  header:
+    welcome: "Willkommen bei IO Communication"
+  body:
+    hello: "Hallo"
+    first_text: "Wir freuen uns, dass Sie sich uns anschließen! Ihr Konto wurde erfolgreich erstellt."
+    second_text: "Klicken Sie auf die Schaltfläche unten, um sich anzumelden und mit der IO-Plattform zu beginnen."
+    third_text: "Melden Sie sich bei Ihrem Konto an"
+    fourth_text: "Wenn Sie dieses Konto nicht erstellt haben, ignorieren Sie diese E-Mail bitte oder wenden Sie sich an den Support."
+    fifth_text: "Beste grüße\n"
+    sixth_text: "IO-Plattform-Team"
+  footer:
+    footer_text_one: "2025 IO-Plattform. Alle Rechte vorbehalten."
+    footer_text_two: "Dies ist eine automatisierte E-Mail. Bitte antworten Sie nicht."
