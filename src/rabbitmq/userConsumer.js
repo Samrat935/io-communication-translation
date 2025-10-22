@@ -18,7 +18,7 @@ export const startUserConsumer = async () => {
       let absoluteMailContent;
 
       // Load correct locale translations
-      const translations = getLocaleFile("GERMANY");
+      const translations = getLocaleFile("GERMANY", { name: msg.name });
       // Resolve absolute path for the main email template (header/footer/layout)
       absoluteTemplatePath = path.resolve(
         __dirname,
@@ -31,17 +31,6 @@ export const startUserConsumer = async () => {
         "../views/templates/customer_reg_email_content.html"
       );
 
-      // const emailData = {
-      //   to: msg.email,
-      //   subject:
-      //     "Welcome to IO Platform — Your Account Has Been Successfully Created!!",
-      //   mainTemplatePath: absoluteTemplatePath,
-      //   contentTemplatePath: absoluteMailContent,
-      //   variables: {
-      //     name: msg.name,
-      //     login_url: "https://io-platform.com/login",
-      //   },
-      // };
       const content = translations.customer_reg_email_content;
       const emailData = {
         to: msg.email,
@@ -50,7 +39,6 @@ export const startUserConsumer = async () => {
         mainTemplatePath: absoluteTemplatePath,
         contentTemplatePath: absoluteMailContent,
         variables: {
-          name: msg.name,
           login_url: "https://io-platform.com/login",
           welcome: content.header.welcome,
           hello: content.body.hello,

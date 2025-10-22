@@ -3,7 +3,7 @@ customer_reg_email_content:
   header:
     welcome: "Welcome to IO Communication"
   body:
-    hello: "Hello"
+    hello: "Hello, ${{name}}"
     first_text: "We're thrilled to have you join us! Your account has been successfully created."
     second_text: "Click the button below to log in and get started with IO Platform."
     third_text: "Login to Your Account"
