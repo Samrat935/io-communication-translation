@@ -2,6 +2,8 @@
 // and database interactions related to the User model.
 import userService from "../services/userService.js";
 import { handleResponse } from "../utils/responseHandler.js";
+import { sendEmail, renderPreview } from "#services/email.service.js";
+import { renderWorkerInvitationEmail } from "#notifications/workerInvitation/workerInvitation.js";
 /**
  * UserController
  * ---------------
@@ -85,6 +87,22 @@ class UserController {
       res.status(500).json({ error: err.message });
     }
   }
+
+  previewEmailHandler = async (req, res) => {
+    try {
+      const html = await renderPreview({
+        locale: "fr_FR",
+        businessUnit: "sales",
+        name: "John Doe",
+        inviter: "Jane Smith",
+        inviteLink: "https://www.google.com",
+      });
+      res.send(html);
+    } catch (err) {
+      console.error(err);
+      res.status(500).send("Preview failed");
+    }
+  };
 }
 
 // Export an instance of the controller for use in route files

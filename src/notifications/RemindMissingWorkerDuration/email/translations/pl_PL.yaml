@@ -1,0 +1,18 @@
+internal-office:
+  infrastructure:
+    notification:
+      remind-missing-worker-duration:
+        email:
+          subject: 'Masz spotkania oczekujące na zatwierdzenie godzin'
+          content: |
+            Dzień dobry {fullName},
+
+            Zbliżamy się do końca okresu rozliczeniowego, prosimy zatem o zatwierdzanie godzin, tak szybko jak to możliwe, do 20 dnia miesiąca włącznie.
+
+            Godziny pracy można zatwierdzić w panelu zarządzania.
+
+            Prosimy o zwrócenie uwagi, że zatwierdzanie godzin z przyszłości nie jest już możliwe. Godziny mogą zostać zatwierdzone dopiero po przepracowaniu faktycznej ilości godzin. Oznacza to że dwudziestego dnia miesiąca należy również zatwierdzić godziny z tego dnia aby otrzymać za nie należne wynagrodzenie!
+
+            Z poważaniem,
+            {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}
+          manage-hours: 'Zarządzaj godzinami'

@@ -1,0 +1,18 @@
+internal-office:
+  infrastructure:
+    notification:
+      remind-missing-worker-duration:
+        email:
+          subject: 'Vous avez des rendez-vous en attente d''approbation des heures'
+          content: |
+            Cher {fullName},
+
+            Nous sommes déjà à la fin de cette période. Par conséquent, veuillez approuver vos heures le plus rapidement possible jusqu'au 20 du mois inclus.
+
+            Vous pouvez les approuver via votre panel client.
+
+            À partir de maintenant, vous ne pouvez plus approuver les heures dans le futur. Vous ne pouvez approuver que des heures après avoir travaillé pour le client. Donc, le 20, vous devez également approuver les heures de cette journée pour que nous puissions vous payer!
+
+            Sincèrement,
+            {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}
+          manage-hours: 'Gérer les heures'

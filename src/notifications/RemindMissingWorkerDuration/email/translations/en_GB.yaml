@@ -1,0 +1,16 @@
+internal-office:
+  infrastructure:
+    notification:
+      remind-missing-worker-duration:
+        email:
+          subject: 'Enter your worked hours'
+          content: |
+            Dear {fullName},
+
+            As we have arrived at the end of this period, it is important that you enter and check all of your worked hours in the past period. Since it is not possible to enter your hours in advance, do not forget to enter the hours you have worked up, until and including the 20th of this month.
+
+            If you are unable to enter your worked hours in time, it will automatically be included in the next payout, after the 20th of this month.
+
+            Best regards,
+            {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}
+          manage-hours: 'Enter your worked hours'

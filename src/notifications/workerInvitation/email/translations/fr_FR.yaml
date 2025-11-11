@@ -1,0 +1,23 @@
+internal-office:
+  infrastructure:
+    notification:
+      new-worker:
+        email:
+          subject: 'Nous avons trouvé des femmes de ménage disponibles pour vous'
+          content: |
+            Cher {fullName},
+
+            Nous sommes heureux de vous proposer une aide. Cliquez sur le bouton ci-dessous pour en savoir plus sur cette aide {workerFirstName} et pour la réserver directement.
+
+            Juste pour plus de clarté :
+
+            Délai de préavis de 7 jours
+            Pas satisfait ? Nous organiserons une autre aide
+            Après la réservation, vous pouvez discuter directement avec l'aide
+            La présentation se fait lors du premier rendez-vous
+
+            Nous vous invitons à consulter nos [conditions générales](https://www.homeworks.nl/algemene-voorwaarden/).
+
+            Cordialement,
+            HomeWorks
+          button: 'Inviter des femmes de ménage)'

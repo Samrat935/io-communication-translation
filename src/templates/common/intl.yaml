@@ -1,0 +1,5 @@
+header:
+  altText: "Company Logo"
+
+footer:
+  copyright: "© {year} {businessUnit} - All rights reserved"

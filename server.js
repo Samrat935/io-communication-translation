@@ -9,6 +9,7 @@ import db from "./src/config/database.js";
 import RabbitMQService from "./src/config/rabbitmq.js";
 import { startUserConsumer } from "./src/rabbitmq/userConsumer.js";
 import { startInvitationConsumer } from "./src/rabbitmq/invitationConsumer.js";
+import { startWorkerReminderConsumer } from "./src/rabbitmq/workerReminderConsumer.js";
 // Set the server port from environment variable or default to 3000
 const PORT = process.env.PORT || 3000;
 
@@ -24,6 +25,7 @@ const startServer = async () => {
     // 2. Start consumer AFTER RabbitMQ channel is ready
     await startUserConsumer();
     await startInvitationConsumer();
+    await startWorkerReminderConsumer();
 
     // Synchronize all Sequelize models with the database (alter tables as needed)
     await db.getInstance().sync({ alter: true }); // Use { force: true } to drop and recreate tables

@@ -1,0 +1,23 @@
+internal-office:
+  infrastructure:
+    notification:
+      new-worker:
+        email:
+          subject: 'We found domestic cleaner(s) available for you'
+          content: |
+            Dear {fullName},
+
+            We are happy to propose a help to you. Click on the button below to read more about this help {workerFirstName} and to book it directly.
+
+            Just for the sake of clarity:
+
+            Notice period 7 days
+            Not satisfied? We will arrange another help
+            After booking you can chat directly with the help
+            Introduction is during the first appointment
+            {businessUnit, select, homeworks {
+            We would like to refer you to our [terms and conditions](https://www.homeworks.nl/algemene-voorwaarden/).} companyworks {} other {}}
+
+            Yours sincerely,
+            {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}
+          button: 'Show domestic cleaner(s)'

@@ -1,0 +1,10 @@
+internal-office:
+  infrastructure:
+    notification:
+      remind-missing-worker-duration:
+        message: |
+          Beste {fullName},
+
+          Accordeer de uren die je gewerkt hebt in jouw inlogomgeving.
+
+          {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}

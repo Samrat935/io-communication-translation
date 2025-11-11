@@ -1,0 +1,12 @@
+internal-office:
+  infrastructure:
+    notification:
+      remind-missing-worker-duration:
+        message: |
+          Szanowni Państwo {fullName},
+
+          Prosimy o jak najszybsze zatwierdzenie godzin pracy do 20 dnia miesiąca włącznie.
+
+          Możesz je zatwierdzić w swoim panelu klienta.
+
+          {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}

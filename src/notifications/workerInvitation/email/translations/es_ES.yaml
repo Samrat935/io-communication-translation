@@ -1,0 +1,23 @@
+internal-office:
+  infrastructure:
+    notification:
+      new-worker:
+        email:
+          subject: 'Encontramos limpiadores domésticos disponibles para usted'
+          content: |
+            Estimado/a {fullName},
+
+            Nos complace ofrecerle ayuda. Haga clic en el botón de abajo para leer más sobre esta ayuda {workerFirstName} y reservarla directamente.
+
+            Para mayor claridad:
+
+            Plazo de preaviso: 7 días
+            ¿No está satisfecho/a? Organizaremos otra ayuda
+            Después de reservar, puede chatear directamente con el/la/los/las asistentes.
+            La presentación se realiza durante la primera cita
+
+            Le recomendamos que consulte nuestros [términos y condiciones](https://www.homeworks.nl/algemene-voorwaarden/).
+
+            Atentamente,
+            HomeWorks
+          button: 'Mostrar ayuda (s) doméstica'

@@ -1,0 +1,12 @@
+internal-office:
+  infrastructure:
+    notification:
+      remind-missing-worker-duration:
+        message: |
+          Estimado {fullName},
+
+          Por favor apruebe su horario lo más rápido posible hasta el día 20 del mes inclusive.
+
+          Puede aprobarlos a través de su panel de clientes.
+
+          {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}

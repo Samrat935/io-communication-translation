@@ -2,6 +2,12 @@
   "name": "communication",
   "version": "1.0.0",
   "type": "module",
+  "imports": {
+    "#services/*": "./src/services/*",
+    "#notifications/*": "./src/notifications/*",
+    "#controllers/*": "./src/controllers/*",
+    "#templates/*": "./src/templates/*"
+  },
   "description": "Node.js Express project with Sequelize (Postgres/MySQL compatible)",
   "main": "server.js",
   "scripts": {
@@ -23,8 +29,11 @@
     "amqplib": "^0.10.9",
     "body-parser": "^2.2.0",
     "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
     "express": "^5.1.0",
     "fs": "^0.0.1-security",
+    "fs-extra": "^11.3.2",
+    "intl-messageformat": "^10.7.18",
     "js-yaml": "^4.1.0",
     "mysql2": "^3.15.2",
     "nodemailer": "^7.0.9",
@@ -32,7 +41,8 @@
     "pg": "^8.16.3",
     "redis": "^5.8.3",
     "sequelize": "^6.37.7",
-    "sequelize-cli-esm": "^5.0.6"
+    "sequelize-cli-esm": "^5.0.6",
+    "yaml": "^2.8.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.2",

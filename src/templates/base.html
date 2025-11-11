@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table {
+          border-collapse: collapse !important;
+        }
+      </style>
+    <![endif]-->
+    <style type="text/css">
+      @font-face {
+        font-family: "Clear Sans Regular";
+        src: url("https://office.{{businessUnit}}.nl/fonts/ClearSans/ClearSans-Regular-webfont.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "BrandonGrotesque-Regular";
+        src: url("https://office.{{businessUnit}}.nl/fonts/BrandonGrotesque/BrandonGrotesque-Regular.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100%;
+        color: #706767;
+        font-family: "Clear Sans Regular", "Trebuchet MS", "Lucida Grande",
+          "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+        font-size: calc(
+          16px + (18 - 16) * ((100vw - 143em) / (2560 - 1440))
+        ) !important;
+        line-height: 1.5em;
+        background-color: #f5f5f5;
+      }
+
+      .wrapper {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right: 0;
+        padding-left: 0;
+        background-color: #f5f5f5;
+        width: 100%;
+        min-height: 100%;
+      }
+
+      .container {
+        width: 32em;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+
+      .inner {
+        padding: 3em;
+        background-color: #fff;
+        background-image: none;
+        background-repeat: repeat;
+        background-position: top left;
+        background-attachment: scroll;
+        box-sizing: border-box;
+      }
+
+      .header {
+        text-align: center;
+      }
+
+      .header__logo {
+        max-width: 22em;
+        max-height: 4.25em;
+        width: 100%;
+      }
+
+      .content {
+        margin-top: 3em;
+        margin-bottom: 2em;
+      }
+
+      .content img {
+        width: 100%;
+      }
+
+      .content a {
+        color: #0c86a1;
+        text-decoration: none;
+      }
+
+      .footer {
+        font-size: 0.9em;
+        display: flex;
+        justify-content: space-between;
+        color: #d2d2d2;
+        flex-wrap: wrap;
+      }
+
+      .footer a {
+        color: #0c86a1;
+        text-decoration: none;
+      }
+
+      .footer p {
+        margin: 0;
+      }
+
+      .footer__contact {
+        margin-right: 1em;
+        width: calc(50% - 1em);
+      }
+
+      .footer__address {
+        margin-left: 1em;
+        width: calc(50% - 1em);
+      }
+
+      .footer__help {
+        margin-top: 1em;
+        width: 100%;
+        color: #706767;
+      }
+
+      @media screen and (max-width: 468px) {
+        .footer {
+          flex-wrap: wrap;
+        }
+
+        .footer__contact {
+          margin-left: 0 !important;
+          width: 100% !important;
+        }
+
+        .footer__address {
+          margin-top: 1em;
+          margin-left: 0 !important;
+          width: 100% !important;
+        }
+      }
+
+      .content__actions {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 2em;
+      }
+
+      .c-btn {
+        display: block;
+        cursor: pointer;
+        color: #fff !important;
+        background-color: #31c7e8;
+        width: calc(100% - 3em);
+        padding: 1em 1.5em;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        font-size: 0.7em;
+        font-family: BrandonGrotesque-Regular, "Clear Sans Regular",
+          "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+          Tahoma, sans-serif;
+        user-select: none;
+        white-space: nowrap;
+        text-align: center;
+        margin: 2em 0;
+        text-decoration: none;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid transparent;
+      }
+
+      .c-btn--secondary {
+        background-color: #f5f5f5;
+        border: 1px solid #e4e4e4;
+        color: #706767 !important;
+      }
+
+      .c-btn--danger {
+        background-color: #ffe4dd;
+        color: #ff5223 !important;
+        border-color: #ff5223;
+      }
+
+      .c-link {
+        display: block;
+        width: 100%;
+        color: #d2d2d2 !important;
+        text-align: center;
+        font-size: 0.9em;
+        text-decoration: none;
+      }
+
+      .footnotes {
+        color: #a7a7a7;
+        font-size: 0.9em;
+        padding: 0.5em 3.33em;
+        text-align: center;
+      }
+
+      .footnotes a {
+        color: #706767;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="inner">
+          <%- include('partials/header.html') %>
+          <div class="content"><%= content %></div>
+          <%- include('partials/footer.html') %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

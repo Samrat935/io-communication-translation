@@ -1,0 +1,23 @@
+internal-office:
+  infrastructure:
+    notification:
+      new-worker:
+        email:
+          subject: 'Znaleźliśmy dostępnych sprzątaczy dla Ciebie'
+          content: |
+            Szanowna/y {fullName},
+
+            Cieszymy się, że możemy zaproponować Ci pomoc. Kliknij poniższy przycisk, aby dowiedzieć się więcej na temat tej pomocy {workerFirstName} i bezpośrednio ją zamówić.
+
+            Dla jasności:
+
+            Okres wypowiedzenia 7 dni
+            Nie jesteś zadowolony? Zorganizujemy inną pomoc
+            Po dokonaniu rezerwacji możesz bezpośrednio porozmawiać z pomocą
+            Wprowadzenie odbywa się podczas pierwszej wizyty
+
+            Chcielibyśmy odnieść się do naszych [zawartych warunków](https://www.homeworks.nl/algemene-voorwaarden/).
+
+            Z poważaniem,
+            HomeWorks
+          button: 'Pokaż pomoc domową'

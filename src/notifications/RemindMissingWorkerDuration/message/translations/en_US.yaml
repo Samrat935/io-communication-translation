@@ -1,0 +1,12 @@
+internal-office:
+  infrastructure:
+    notification:
+      remind-missing-worker-duration:
+        message: |
+          Dear {fullName},
+
+          Please approve your hours as quickly as possible up to and including the 20th of the month.
+
+          You can approve them via your customer panel.
+
+          {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}

@@ -1,0 +1,5 @@
+header:
+  altText: "Logo de l'entreprise"
+
+footer:
+  copyright: "© {year} {businessUnit} - Tous droits réservés"

@@ -1,0 +1,7 @@
+internal-office:
+  infrastructure:
+    notification:
+      remind-missing-worker-duration:
+        push-message:
+          subject: 'Keur jouw uren goed'
+          body: "Geef jouw gewerkte uren op"

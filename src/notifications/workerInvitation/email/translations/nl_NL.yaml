@@ -1,0 +1,24 @@
+internal-office:
+  infrastructure:
+    notification:
+      new-worker:
+        email:
+          subject: 'Goed nieuws: we hebben geschikte huishoudelijke hulp voor u beschikbaar! | HomeWorks'
+          content: |
+            Beste {fullName},
+
+            We stellen graag {workerFirstName}.aan je voor. Klik op onderstaande button "Bekijk hulp" om wat meer over deze huishoudelijke hulp te lezen en om deze dan ook direct te boeken. 
+
+            Voor de duidelijkheid: 
+
+            Opzegtermijn 7 dagen
+            Niet tevreden? We regelen een andere hulp
+            Na de boeking kunt u direct chatten met de hulp
+            Kennismaking vindt plaats tijdens de eerste afspraak
+
+            We verwijzen u graag naar onze [algemene voorwaarden](https://www.homeworks.nl/algemene-voorwaarden/).
+
+            Hoogachtend,
+            HomeWorks
+          button: 'Toon huishoudelijke hulp (-en)'
+

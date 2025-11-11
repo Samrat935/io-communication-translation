@@ -1,0 +1,20 @@
+<%- include('../../../templates/partials/header.html') %>
+
+<div class="content">
+  <p><%= content %></p>
+</div>
+<% if (cta) { %>
+<div style="margin: 20px 0">
+  <a
+    href="<%= cta %>"
+    style="display: inline-block; padding: 10px 16px; text-decoration: none"
+    ><%= button %></a
+  >
+</div>
+<div class="footer">
+  <div class="footer__contact"><%= footerContact %></div>
+  <div class="footer__address"></div>
+  <div class="footer__help"></div>
+  <p style="font-size: 12px; color: #888"><%= footerNote %></p>
+</div>
+<% } %> <%- include('../../../templates/partials/footer.html') %>

@@ -1,0 +1,24 @@
+notifications:
+  workerInvitation:
+    email:
+      subject: "Wir haben für Sie verfügbare Haushaltsreiniger gefunden"
+      content: |
+        Sehr geehrter {fullName},
+
+        Wir freuen uns, Ihnen Unterstützung anbieten zu können. Klicken Sie auf die Schaltfläche unten, um mehr über diese Unterstützung von {workerFirstName} zu erfahren und sie direkt zu buchen.
+
+        Nur zur Klarstellung:
+
+        Kündigungsfrist 7 Tage
+        Nicht zufrieden? Wir organisieren eine andere Hilfe
+        Nach der Buchung können Sie direkt mit der Unterstützung chatten
+        Die Einführung erfolgt beim ersten Termin
+
+        Wir möchten Sie auf unsere [Allgemeinen Geschäftsbedingungen](https://www.homeworks.nl/algemene-voorwaarden/) hinweisen.
+
+        Mit freundlichen Grüßen,
+        HomeWorks
+      button: "Haushaltsreiniger anzeigen"
+      footerNote: "Erhalten Sie 25 Euro! Wenn Sie sich um einen neuen Kunden oder eine Haushaltshilfe kümmern. Fragen Sie nach den Bedingungen."
+      cta: "{inviteLink}"
+      footerContact: "Telefon: 020-4688420  www.homeworks.nl"

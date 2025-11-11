@@ -1,0 +1,18 @@
+internal-office:
+  infrastructure:
+    notification:
+      remind-missing-worker-duration:
+        email:
+          subject: 'Tiene citas en espera de aprobación de horas'
+          content: |
+            Estimado {fullName},
+
+            Ya estamos al final de este período. Por lo tanto, apruebe sus horas lo más rápido posible hasta el día 20 del mes inclusive.
+
+            Puede aprobarlos a través de su panel de clientes.
+
+            A partir de ahora ya no podrá aprobar las horas en el futuro. Solo puede aprobar horas después de haber trabajado para el cliente. ¡Así que el día 20 también tienes que aprobar las horas de ese día para que podamos pagarte!
+
+            Atentamente,
+            {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}
+          manage-hours: 'Administrar horas'
