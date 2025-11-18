@@ -1,0 +1,22 @@
+internal-office:
+  infrastructure:
+    notification:
+      remind-missing-worker-duration:
+        email:
+          subject: 'Geef jouw gewerkte uren op'
+          content: |
+            Beste {fullName},
+
+            We zijn aan het einde van deze factuurperiode gekomen. Vul daarom snel jouw uren in tot en met de 20e van de maand.
+
+            Je kunt alleen achteraf uren goedkeuren. Dus op de 20e moet je ook de uren van die dag goedkeuren.
+
+            Belangrijk: alléén als je al jouw uren goed hebt ingevuld op de 20e kunnen jouw uren tijdig worden uitbetaald.
+
+            Lukt het je niet om op de 20e al jouw uren te accorderen? Dan doe je na ongeveer één week vanzelf mee met de tweede ronde.
+
+            De betaling ontvang je in ieder geval voor het eind van de maand.
+
+            Met vriendelijke groet,
+            {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}
+          manage-hours: 'Controleer jouw uren'

@@ -1,0 +1,12 @@
+internal-office:
+  infrastructure:
+    notification:
+      remind-missing-worker-duration:
+        message: |
+          عزيزي {fullName}،
+
+          يرجى الموافقة على ساعات عملك في أسرع وقت ممكن حتى يوم 20 من الشهر.
+
+          يمكنك الموافقة عليها من خلال لوحة العملاء الخاصة بك.
+
+          {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}

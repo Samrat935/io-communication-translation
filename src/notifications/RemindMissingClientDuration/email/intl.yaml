@@ -1,0 +1,12 @@
+notifications:
+  RemindMissingClientDuration:
+    email:
+      subject: "You have appointments awaiting hours approval"
+      content: |
+        Dear {fullName},
+
+        We’re nearing the end of the current period. Please take a moment to review and approve the hours submitted by your worker — up to and including the 20th of this month — as soon as possible via your customer panel.
+
+        Sincerely,
+        {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}
+      managehours: "Manage hours"

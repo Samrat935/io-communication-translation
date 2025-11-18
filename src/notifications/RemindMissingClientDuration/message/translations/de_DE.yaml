@@ -1,0 +1,12 @@
+internal-office:
+  infrastructure:
+    notification:
+      remind-missing-worker-duration:
+        message: |
+          Sehr geehrte {fullName},
+
+          Bitte genehmigen Sie Ihre Stunden so schnell wie möglich bis einschließlich des 20. des Monats.
+
+          Sie können sie über Ihr Kundenpanel genehmigen.
+
+          {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}

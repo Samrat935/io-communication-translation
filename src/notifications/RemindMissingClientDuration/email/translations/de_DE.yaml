@@ -1,0 +1,16 @@
+notifications:
+  RemindMissingWorkerDuration:
+    email:
+      subject: "Sie haben Termine, deren Genehmigung noch aussteht"
+      content: |
+        Liebe {fullName},
+
+        Wir sind bereits am Ende dieser Periode. Bitte genehmigen Sie daher Ihre Stunden so schnell wie möglich bis einschließlich des 20. des Monats.
+
+        Sie können sie über Ihr Kundenpanel genehmigen.
+
+        Von nun an können Sie die Stunden in der Zukunft nicht mehr genehmigen. Sie können erst Stunden nach Ihrer Arbeit für den Kunden genehmigen. Am 20. müssen Sie also auch die Stunden dieses Tages genehmigen, damit wir Sie bezahlen können!
+
+        Mit freundlichen Grüßen
+        {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}
+      managehours: "Stunden verwalten"
