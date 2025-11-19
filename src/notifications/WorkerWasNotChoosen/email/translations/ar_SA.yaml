@@ -1,0 +1,15 @@
+internal-office:
+  infrastructure:
+    notification:
+      worker-was-not-chosen:
+        due-to-cancelled-wish:
+          message: |
+            عزيزي {fullName}،
+
+            ، للأسف، لم يتم اختيارك هذه المرة كعميل في حوالي {street}، {city}.
+
+            قرر العميل أنه لم يعد بحاجة إلى مساعدة منزلية.
+
+            لا تقلق، لا يزال هناك الكثير من العملاء يبحثون عن شخص مثلك. سنبقيك على اطلاع دائم.
+
+            {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}

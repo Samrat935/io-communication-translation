@@ -2,11 +2,11 @@ import RabbitMQService from "../config/rabbitmq.js";
 import { sendEmail } from "#services/email.service.js";
 import { renderWorkerWasNotChoosenEmail } from "#notifications/WorkerWasNotChoosen/workerNotChoosen.js";
 
-export const startWorkerNotificationConsumer = async () => {
+export const startClientNotificationConsumer = async () => {
   await RabbitMQService.consume(
-    "worker_notification",
-    "worker_notification_mail",
-    "worker.notification",
+    "client_notification",
+    "client_notification_mail",
+    "client.notification",
     async (msgs) => {
       //console.log("Processing message:", msgs);
       if (Array.isArray(msgs.data)) {
@@ -15,8 +15,8 @@ export const startWorkerNotificationConsumer = async () => {
             locale: userObject.locale,
             businessUnit: userObject.businessUnit || "companyworks",
             fullName: userObject.name,
-            street: "Bose lane",
-            city: "kolkata",
+            street: userObject.street,
+            city: userObject.city,
           });
 
           await sendEmail({

@@ -1,0 +1,15 @@
+internal-office:
+  infrastructure:
+    notification:
+      worker-was-not-chosen:
+        due-to-cancelled-wish:
+          message: |
+            Drogi {fullName},
+
+            Niestety tym razem nie zostałeś wybrany na klienta w okolicach {street}, {city}.
+
+            Klient uznał, że pomoc domowa nie jest już potrzebna.
+
+            Nie martw się, wciąż jest wielu klientów szukających osoby takiej jak Ty. Będziemy Was informować.
+
+            {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}

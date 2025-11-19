@@ -1,0 +1,14 @@
+internal-office:
+  infrastructure:
+    notification:
+      worker-was-not-chosen:
+        due-to-cancelled-wish:
+          message: |
+            Beste {fullName},
+
+            De klant in de buurt van {street}, {city} heeft zijn aanvraag ingetrokken omdat deze geen hulp meer nodig had.
+
+            Dagelijks melden zich nieuwe klanten aan. Zodra er één past in jouw rooster dan laten we dat gelijk weten.
+
+            Met vriendelijke groet,
+            {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}

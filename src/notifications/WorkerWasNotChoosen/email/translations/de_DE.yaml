@@ -1,0 +1,15 @@
+internal-office:
+  infrastructure:
+    notification:
+      worker-was-not-chosen:
+        due-to-cancelled-wish:
+          message: |
+            Sehr geehrte {fullName},
+
+            Leider wurden Sie diesmal nicht für Kunden um {street}, {city}.
+
+            Kunde entschied, dass keine Haushaltshilfe mehr benötigt wird.
+
+            Keine Sorge, es gibt immer noch viele Kunden, die eine Person wie Sie suchen. Wir werden dich auf dem Laufenden halten.
+
+            {businessUnit, select, homeworks {HomeWorks} companyworks {CompanyWorks} other {}}
